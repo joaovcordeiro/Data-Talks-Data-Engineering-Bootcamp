@@ -11,6 +11,12 @@ mkdir ny_taxi_postgres_data
 
 ### Running Postgres and PgAdmin with Docker
 
+To make pgAdmin configuration persistent
+
+```bash
+sudo chown 5050:5050 data_pgadmin
+```
+
 ```bash
 docker-compose up
 ```
