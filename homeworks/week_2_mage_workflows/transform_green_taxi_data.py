@@ -15,9 +15,7 @@ def transform(data, *args, **kwargs):
     df.rename(columns={'VendorID': 'vendor_id', 'RatecodeID': 'ratecode_id', 
     'PULocationID': 'pu_location_id', 'DOLocationID': 'do_location_id'}, inplace=True)
 
-    print(df['lpep_pickup_date'].nunique())
-
-    # return df
+    return df
 
 @test
 def vendor_id_valid(df) -> None:
